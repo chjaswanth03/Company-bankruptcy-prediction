@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankruptcy Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header h1 {
+            float: left;
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .home-section, .about-section, .prediction-section, .contact-section, .abstract-section, .workflow-section {
+            padding: 20px 0;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+
+        .home-section {
+            background-color: #e2e2e2;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .home-section h2 {
+            font-size: 2.5em;
+        }
+
+        .home-section p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .prediction-form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .prediction-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .prediction-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .prediction-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .prediction-form button:hover {
+            background-color: #45a049;
+        }
+
+        .prediction-result {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #4CAF50;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bankruptcy Prediction</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#abstract">Abstract</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+                    <li><a href="#prediction">Prediction</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Welcome to Bankruptcy Prediction</h2>
+            <p>This tool predicts the likelihood of a company going bankrupt based on its financial data.</p>
+            <a href="#prediction" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Bankruptcy Prediction</h2>
+            <p>This project aims to provide accurate predictions of company bankruptcies using machine learning techniques. Our team consists of experts in data science, finance, and web development. By analyzing various financial indicators, our model can help stakeholders make informed decisions and mitigate financial risks.</p>
+        </div>
+    </section>
+
+    <section id="abstract" class="abstract-section">
+        <div class="container">
+            <h2 class="section-title">Abstract</h2>
+            <p>Our project, titled "Company Bankruptcy Prediction," is a novel endeavor aimed at leveraging machine learning techniques to forecast the likelihood of a company facing bankruptcy based on its financial data. Through an intricate analysis of various financial features such as Return on Assets (ROA), Operating Profit Rate, Debt Ratio, and more, our predictive model endeavors to offer accurate insights into the financial health of companies. This predictive tool holds immense significance for stakeholders in finance, investment, and corporate management sectors, empowering them to make informed decisions and mitigate risks associated with potential bankruptcies.</p>
+        </div>
+    </section>
+
+    <section id="workflow" class="workflow-section">
+        <div class="container">
+            <h2 class="section-title">Workflow</h2>
+            <p><strong>Data Collection and Preprocessing:</strong> The project initiates with the acquisition of a comprehensive dataset containing financial metrics of diverse companies. Data preprocessing techniques are then applied to clean and normalize the data, ensuring its suitability for machine learning algorithms.</p>
+            <p><strong>Feature Selection and Engineering:</strong> Following data preprocessing, a meticulous process of feature selection and engineering is undertaken to identify the most relevant financial indicators for bankruptcy prediction. This step involves statistical analysis, correlation studies, and domain expertise to select features that significantly impact bankruptcy risk.</p>
+            <p><strong>Model Development:</strong> With the curated dataset and selected features, various machine learning models are trained and evaluated to identify the most effective predictive algorithm. Ensemble methods, such as Random Forests or Gradient Boosting, may be employed to enhance predictive performance.</p>
+            <p><strong>Model Evaluation and Validation:</strong> The developed model undergoes rigorous evaluation and validation processes using techniques such as cross-validation, confusion matrix analysis, and ROC curves. This ensures the model's robustness and generalizability across different datasets and scenarios.</p>
+            <p><strong>Deployment and Integration:</strong> Upon successful validation, the trained model is deployed into a user-friendly web application using frameworks like Flask or Django. The application allows stakeholders to input company financial data and receive real-time predictions regarding bankruptcy risk, facilitating informed decision-making.</p>
+            <p><strong>Continuous Monitoring and Improvement:</strong> Post-deployment, the model's performance is continuously monitored, and refinements are made based on new data and feedback. Regular updates and improvements ensure the model remains accurate and relevant in dynamic financial landscapes.</p>
+        </div>
+    </section>
+
+    <section id="prediction" class="prediction-section">
+        <div class="container">
+            <h2 class="section-title">Bankruptcy Prediction</h2>
+            <div class="prediction-form">
+                <form id="predictionForm" method="POST" action="/predict">
+                    <label for="ROA">ROA (Return on Assets):</label>
+                    <input type="text" id="ROA" name="ROA" required>
+                    <!-- Add input fields for other financial features -->
+                    <button type="submit" class="btn">Predict</button>
+                </form>
+            </div>
+            <div class="prediction-result" id="predictionResult">{{ prediction_text }}</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Have questions or feedback? Reach out to us!</p>
+            <p>Email: info@bankruptcyprediction.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bankruptcy Prediction. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="path_to_image/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="path_to_image/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="path_to_image/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
